@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Work+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <aside>
+        <p>Регистрация</p>
+    </aside>
+    <main>
+        <object data="img/user_animated.svg"></object>
+        <div class="registration">
+            <h1>Не зарегистрированы?</h1>
+            <p>Используйте нашу форму для создания аккаунта</p>
+            <form>
+                <label class="formEl formEl1" for="firstName">
+                    Имя
+                    <input class="field" type="text" id="firstName" placeholder="Иван">
+                    <span>Поле не заполнено</span>
+                </label>
+                <label class="formEl formEl2" for="lastName">
+                    Фамилия
+                    <input class="field" type="text" id="lastName" placeholder="Иванов">
+                    <span>Поле не заполнено</span>
+                </label>
+                <label class="formEl formEl3" for="e-mail">
+                    E-mail
+                    <input class="field" type="email" id="e-mail" placeholder="ivan.ivanov@yahoo.com" value="ivan.ivanov@yahoo.com">
+                    <span>Неправильный e-mail</span>
+                    <img src="img/check.svg" alt="check">
+                </label>
+                <label class="dateOfBirth formEl formEl4">
+                    Дата рождения
+                    <input class="field" type="date" id="date" required>
+                    <span></span>
+                </label>
+                <label class="formEl formEl5" for="password">
+                    Пароль
+                    <input class="field" type="password" id="password" value="Password1!">
+                    <span></span>
+                </label>
+                <label class="formEl formEl6" for="confirmPassword">
+                    Подтверждение пароля
+                    <input class="field" type="password" id="confirmPassword" value="Password1!">
+                    <span></span>
+                </label>
+            </form> 
+        </div>
+        <div class="successRegistration">
+            <h1>Спасибо!</h1>
+            <p>Вы зарегистрированы!</p>
+        </div>
+        <div>
+            <button type='submit'>Зарегистрироваться</button>
+        </div>
+    </main>
+    <script defer src="index.js"></script>
+</body>
+</html>
